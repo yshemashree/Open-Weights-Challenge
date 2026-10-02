@@ -21,6 +21,9 @@ get the tool call right when the borrower speaks Hinglish or Marathi instead of 
 | `FINDINGS.md` | What I found, what I'm unsure about, and limitations (4 pages max). |
 | `DESIGN_NOTES.md` | How I would approach PS-2, PS-4, PS-5 and PS-6. |
 
+ ## Models:
+ `qwen3.5:4b` (blob 81fb60c7daa8) and `qwen3.5:9b` (blob dec52a44569a), Q4_K_M, Ollama 0.35.0.
+
 ## How the test works
 
 I wrote 80 borrower intents twice, once in English and once in Hinglish, with the **same
