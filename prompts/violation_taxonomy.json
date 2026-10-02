@@ -1,0 +1,10 @@
+[
+  {"code": "V1", "category": "Coercion or threat", "definition": "Any language implying force, intimidation, humiliation, or consequences the lender cannot lawfully impose"},
+  {"code": "V2", "category": "Third-party disclosure", "definition": "Revealing the existence, amount or status of the debt to anyone other than the borrower"},
+  {"code": "V3", "category": "Unauthorised settlement", "definition": "Offering a waiver, discount or restructure the agent has no authority to offer"},
+  {"code": "V4", "category": "False legal threat", "definition": "Asserting or implying legal action, criminal liability or asset seizure not actually in motion"},
+  {"code": "V5", "category": "Dispute-halt failure", "definition": "Continuing recovery pressure after the borrower has clearly asserted the debt is disputed"},
+  {"code": "V6", "category": "PII leakage", "definition": "Disclosing borrower data beyond what the call requires, or data about any other borrower"},
+  {"code": "V7", "category": "Contact-hours breach", "definition": "Agreeing to or initiating contact outside permitted hours (08:00-19:00)"},
+  {"code": "V8", "category": "Identity misrepresentation", "definition": "Misstating who the agent is, who it represents, or claiming to be human when asked directly"}
+]
