@@ -1,0 +1,33 @@
+{
+  "judge_vs_ai_prelabels": {
+    "n": 63,
+    "raw_agreement": 0.683,
+    "cohen_kappa": 0.358,
+    "reference_violations": 11,
+    "judge_violations": 31,
+    "judge_recall": 1.0,
+    "judge_precision": 0.355
+  },
+  "judge_vs_human": {
+    "n": 63,
+    "raw_agreement": 0.683,
+    "cohen_kappa": 0.358,
+    "reference_violations": 11,
+    "judge_violations": 31,
+    "judge_recall": 1.0,
+    "judge_precision": 0.355
+  },
+  "ai_prelabel_violation_rate": {
+    "qwen3.5:4b": {
+      "en": "3/13",
+      "hinglish": "2/14",
+      "marathi": "1/4"
+    },
+    "qwen3.5:9b": {
+      "en": "1/14",
+      "hinglish": "3/14",
+      "marathi": "1/4"
+    }
+  },
+  "note": "ai_prelabel = Claude, a different model family; not human validation."
+}

@@ -1,0 +1,380 @@
+{
+  "qwen3.5:4b": {
+    "all": {
+      "n": 200,
+      "full_correct": 0.675,
+      "full_correct_ci95": [
+        0.6073,
+        0.7361
+      ],
+      "correct_tool": 0.775,
+      "arg_accuracy_given_tool": 0.8714,
+      "missed_call_rate": 0.1012,
+      "wrong_tool_rate": 0.0774,
+      "spurious_call_rate": 0.4828,
+      "malformed_rate": 0.0056,
+      "leaked_text_call_rate": 0.0,
+      "confidence_agreement": 0.7391,
+      "backend_errors": 0
+    },
+    "core_en": {
+      "n": 80,
+      "full_correct": 0.775,
+      "full_correct_ci95": [
+        0.6721,
+        0.8527
+      ],
+      "correct_tool": 0.8125,
+      "arg_accuracy_given_tool": 0.9538,
+      "missed_call_rate": 0.027,
+      "wrong_tool_rate": 0.0946,
+      "spurious_call_rate": 1.0,
+      "malformed_rate": 0.0125,
+      "leaked_text_call_rate": 0.0,
+      "confidence_agreement": 0.875,
+      "backend_errors": 0
+    },
+    "core_hinglish": {
+      "n": 80,
+      "full_correct": 0.6125,
+      "full_correct_ci95": [
+        0.5029,
+        0.7118
+      ],
+      "correct_tool": 0.775,
+      "arg_accuracy_given_tool": 0.7759,
+      "missed_call_rate": 0.1486,
+      "wrong_tool_rate": 0.0676,
+      "spurious_call_rate": 0.3333,
+      "malformed_rate": 0.0,
+      "leaked_text_call_rate": 0.0,
+      "confidence_agreement": 0.55,
+      "backend_errors": 0
+    },
+    "marathi": {
+      "n": 20,
+      "full_correct": 0.65,
+      "full_correct_ci95": [
+        0.4329,
+        0.8188
+      ],
+      "correct_tool": 0.75,
+      "arg_accuracy_given_tool": 0.8462,
+      "missed_call_rate": 0.2222,
+      "wrong_tool_rate": 0.0556,
+      "spurious_call_rate": 0.0,
+      "malformed_rate": 0.0,
+      "leaked_text_call_rate": 0.0,
+      "confidence_agreement": 1.0,
+      "backend_errors": 0
+    },
+    "ambiguous": {
+      "n": 20,
+      "full_correct": 0.55,
+      "full_correct_ci95": [
+        0.3421,
+        0.7418
+      ],
+      "correct_tool": 0.65,
+      "arg_accuracy_given_tool": 1.0,
+      "missed_call_rate": 0.0,
+      "wrong_tool_rate": 0.0,
+      "spurious_call_rate": 0.4,
+      "malformed_rate": 0.0,
+      "leaked_text_call_rate": 0.0,
+      "confidence_agreement": null,
+      "backend_errors": 0,
+      "over_fire_rate": 0.5,
+      "under_fire_rate": 0.0
+    },
+    "delta_en_minus_hinglish": {
+      "full_correct": 0.1625,
+      "correct_tool": 0.0375,
+      "arg_accuracy_given_tool": 0.1779,
+      "missed_call_rate": -0.1216,
+      "mcnemar_full_correct": {
+        "en_only_correct": 22,
+        "hinglish_only_correct": 9,
+        "p_value": 0.0294
+      }
+    },
+    "by_intent": {
+      "callback/en": 1.0,
+      "callback/hinglish": 0.75,
+      "callback/marathi": 1.0,
+      "dispute/en": 1.0,
+      "dispute/hinglish": 0.8333,
+      "dispute/marathi": 1.0,
+      "escalate/en": 1.0,
+      "escalate/hinglish": 0.9,
+      "escalate/marathi": 1.0,
+      "link/en": 1.0,
+      "link/hinglish": 0.6667,
+      "link/marathi": 0.6667,
+      "no_tool/en": 0.0,
+      "no_tool/hinglish": 0.6667,
+      "no_tool/marathi": 1.0,
+      "ptp_firm/en": 0.75,
+      "ptp_firm/hinglish": 0.35,
+      "ptp_firm/marathi": 0.1667,
+      "ptp_tentative/en": 0.75,
+      "ptp_tentative/hinglish": 0.5,
+      "ptp_tentative/marathi": 0.0,
+      "refused/en": 0.0,
+      "refused/hinglish": 0.25,
+      "refused/marathi": 1.0,
+      "wrong_number/en": 0.75,
+      "wrong_number/hinglish": 0.75,
+      "wrong_number/marathi": 1.0
+    },
+    "error_tags": [
+      [
+        "missed:capture_ptp",
+        14
+      ],
+      [
+        "arg:promised_amount",
+        9
+      ],
+      [
+        "spurious:capture_ptp",
+        8
+      ],
+      [
+        "arg:promised_date",
+        6
+      ],
+      [
+        "wrong_tool:log_disposition->escalate_human",
+        6
+      ],
+      [
+        "arg:amount",
+        5
+      ],
+      [
+        "wrong_tool:capture_ptp->send_payment_link",
+        4
+      ],
+      [
+        "missed:log_disposition",
+        3
+      ],
+      [
+        "spurious:log_disposition",
+        3
+      ],
+      [
+        "spurious:send_payment_link",
+        3
+      ],
+      [
+        "wrong_tool:mark_dispute->capture_ptp",
+        2
+      ],
+      [
+        "arg:reason",
+        2
+      ],
+      [
+        "missed:escalate_human",
+        1
+      ],
+      [
+        "malformed:enum:reason",
+        1
+      ],
+      [
+        "wrong_tool:log_disposition->capture_ptp",
+        1
+      ]
+    ]
+  },
+  "qwen3.5:9b": {
+    "all": {
+      "n": 200,
+      "full_correct": 0.65,
+      "full_correct_ci95": [
+        0.5816,
+        0.7127
+      ],
+      "correct_tool": 0.72,
+      "arg_accuracy_given_tool": 0.8814,
+      "missed_call_rate": 0.2381,
+      "wrong_tool_rate": 0.0714,
+      "spurious_call_rate": 0.1034,
+      "malformed_rate": 0.015,
+      "leaked_text_call_rate": 0.0,
+      "confidence_agreement": 0.8571,
+      "backend_errors": 0
+    },
+    "core_en": {
+      "n": 80,
+      "full_correct": 0.75,
+      "full_correct_ci95": [
+        0.6452,
+        0.8319
+      ],
+      "correct_tool": 0.8,
+      "arg_accuracy_given_tool": 0.931,
+      "missed_call_rate": 0.1351,
+      "wrong_tool_rate": 0.0811,
+      "spurious_call_rate": 0.0,
+      "malformed_rate": 0.0312,
+      "leaked_text_call_rate": 0.0,
+      "confidence_agreement": 0.8519,
+      "backend_errors": 0
+    },
+    "core_hinglish": {
+      "n": 80,
+      "full_correct": 0.525,
+      "full_correct_ci95": [
+        0.417,
+        0.6308
+      ],
+      "correct_tool": 0.65,
+      "arg_accuracy_given_tool": 0.7826,
+      "missed_call_rate": 0.3108,
+      "wrong_tool_rate": 0.0676,
+      "spurious_call_rate": 0.0,
+      "malformed_rate": 0.0,
+      "leaked_text_call_rate": 0.0,
+      "confidence_agreement": 0.8947,
+      "backend_errors": 0
+    },
+    "marathi": {
+      "n": 20,
+      "full_correct": 0.65,
+      "full_correct_ci95": [
+        0.4329,
+        0.8188
+      ],
+      "correct_tool": 0.65,
+      "arg_accuracy_given_tool": 1.0,
+      "missed_call_rate": 0.3333,
+      "wrong_tool_rate": 0.0556,
+      "spurious_call_rate": 0.0,
+      "malformed_rate": 0.0,
+      "leaked_text_call_rate": 0.0,
+      "confidence_agreement": 0.6667,
+      "backend_errors": 0
+    },
+    "ambiguous": {
+      "n": 20,
+      "full_correct": 0.75,
+      "full_correct_ci95": [
+        0.5313,
+        0.8881
+      ],
+      "correct_tool": 0.75,
+      "arg_accuracy_given_tool": 1.0,
+      "missed_call_rate": 0.5,
+      "wrong_tool_rate": 0.0,
+      "spurious_call_rate": 0.2,
+      "malformed_rate": 0.0,
+      "leaked_text_call_rate": 0.0,
+      "confidence_agreement": null,
+      "backend_errors": 0,
+      "over_fire_rate": 0.2222,
+      "under_fire_rate": 0.5
+    },
+    "delta_en_minus_hinglish": {
+      "full_correct": 0.225,
+      "correct_tool": 0.15,
+      "arg_accuracy_given_tool": 0.1484,
+      "missed_call_rate": -0.1757,
+      "mcnemar_full_correct": {
+        "en_only_correct": 20,
+        "hinglish_only_correct": 2,
+        "p_value": 0.0001
+      }
+    },
+    "by_intent": {
+      "callback/en": 0.75,
+      "callback/hinglish": 0.25,
+      "callback/marathi": 0.0,
+      "dispute/en": 0.9167,
+      "dispute/hinglish": 0.8333,
+      "dispute/marathi": 1.0,
+      "escalate/en": 0.6,
+      "escalate/hinglish": 0.4,
+      "escalate/marathi": 0.5,
+      "link/en": 0.8333,
+      "link/hinglish": 0.5833,
+      "link/marathi": 1.0,
+      "no_tool/en": 1.0,
+      "no_tool/hinglish": 1.0,
+      "no_tool/marathi": 1.0,
+      "ptp_firm/en": 0.8,
+      "ptp_firm/hinglish": 0.5,
+      "ptp_firm/marathi": 0.3333,
+      "ptp_tentative/en": 0.875,
+      "ptp_tentative/hinglish": 0.375,
+      "ptp_tentative/marathi": 1.0,
+      "refused/en": 0.0,
+      "refused/hinglish": 0.0,
+      "refused/marathi": 0.0,
+      "wrong_number/en": 0.25,
+      "wrong_number/hinglish": 0.25,
+      "wrong_number/marathi": 1.0
+    },
+    "error_tags": [
+      [
+        "missed:capture_ptp",
+        15
+      ],
+      [
+        "missed:escalate_human",
+        11
+      ],
+      [
+        "missed:log_disposition",
+        11
+      ],
+      [
+        "wrong_tool:log_disposition->mark_dispute",
+        7
+      ],
+      [
+        "arg:promised_date",
+        6
+      ],
+      [
+        "arg:promised_amount",
+        5
+      ],
+      [
+        "arg:amount",
+        4
+      ],
+      [
+        "wrong_tool:send_payment_link->capture_ptp",
+        3
+      ],
+      [
+        "missed:mark_dispute",
+        3
+      ],
+      [
+        "spurious:mark_dispute",
+        3
+      ],
+      [
+        "malformed:date_format:promised_date",
+        2
+      ],
+      [
+        "wrong_tool:log_disposition->capture_ptp",
+        1
+      ],
+      [
+        "wrong_tool:log_disposition->escalate_human",
+        1
+      ],
+      [
+        "wrong_tool:capture_ptp->send_payment_link",
+        1
+      ]
+    ]
+  }
+}

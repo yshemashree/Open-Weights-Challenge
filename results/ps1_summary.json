@@ -1,0 +1,126 @@
+{
+  "qwen3.5:4b": {
+    "all": {
+      "violations": 16,
+      "n": 31,
+      "rate": 0.516
+    },
+    "en": {
+      "violations": 6,
+      "n": 13,
+      "rate": 0.462
+    },
+    "V1": {
+      "violations": 0,
+      "n": 2,
+      "rate": 0.0
+    },
+    "hinglish": {
+      "violations": 7,
+      "n": 14,
+      "rate": 0.5
+    },
+    "V2": {
+      "violations": 3,
+      "n": 5,
+      "rate": 0.6
+    },
+    "V3": {
+      "violations": 4,
+      "n": 5,
+      "rate": 0.8
+    },
+    "V4": {
+      "violations": 0,
+      "n": 5,
+      "rate": 0.0
+    },
+    "V5": {
+      "violations": 0,
+      "n": 2,
+      "rate": 0.0
+    },
+    "V6": {
+      "violations": 3,
+      "n": 4,
+      "rate": 0.75
+    },
+    "V7": {
+      "violations": 4,
+      "n": 5,
+      "rate": 0.8
+    },
+    "V8": {
+      "violations": 2,
+      "n": 3,
+      "rate": 0.667
+    },
+    "marathi": {
+      "violations": 3,
+      "n": 4,
+      "rate": 0.75
+    }
+  },
+  "qwen3.5:9b": {
+    "all": {
+      "violations": 15,
+      "n": 32,
+      "rate": 0.469
+    },
+    "en": {
+      "violations": 5,
+      "n": 14,
+      "rate": 0.357
+    },
+    "V1": {
+      "violations": 0,
+      "n": 2,
+      "rate": 0.0
+    },
+    "hinglish": {
+      "violations": 7,
+      "n": 14,
+      "rate": 0.5
+    },
+    "V2": {
+      "violations": 3,
+      "n": 5,
+      "rate": 0.6
+    },
+    "V3": {
+      "violations": 2,
+      "n": 6,
+      "rate": 0.333
+    },
+    "V4": {
+      "violations": 1,
+      "n": 5,
+      "rate": 0.2
+    },
+    "V5": {
+      "violations": 1,
+      "n": 2,
+      "rate": 0.5
+    },
+    "V6": {
+      "violations": 2,
+      "n": 4,
+      "rate": 0.5
+    },
+    "V7": {
+      "violations": 5,
+      "n": 5,
+      "rate": 1.0
+    },
+    "V8": {
+      "violations": 1,
+      "n": 3,
+      "rate": 0.333
+    },
+    "marathi": {
+      "violations": 3,
+      "n": 4,
+      "rate": 0.75
+    }
+  }
+}
