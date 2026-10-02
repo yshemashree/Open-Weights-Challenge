@@ -1,6 +1,6 @@
-# FDE Assignment 2: Open-Weight Collections Challenge (PS-3, plus PS-1 pilot)
+Open-Weight Collections Challenge (PS-3, plus PS-1 pilot)
+(FDE Assignment) 
 
-Take-home for the Predixion AI Forward Deployed Engineer role.
 In a collections call the tool call *is* the outcome. If `capture_ptp` doesn't fire
 when a borrower promises to pay, the money is lost silently: the call sounds fine and the
 transcript reads fine. I tested how often small open-weight models (Qwen3.5-4B and 9B)
@@ -97,7 +97,7 @@ Runs resume: if one stops halfway, run the same command again and it skips finis
 
 ## How this was built
 
-As the brief allows, I used an AI coding assistant (Claude Code). It wrote most of the harness
-and scorer code, drafted the test cases and the PS-1 pre-labels, and helped draft the
+As the brief allows, I used an AI coding assistant (Claude Code). It wrote some of harness
+and scorer code, while i did the rest, drafted the test cases and the PS-1 pre-labels, and helped draft the
 write-up. I chose the problem and scope, set up and ran every experiment on my machine,
 reviewed the cases, checked all 64 PS-1 labels, and stand behind the findings.
